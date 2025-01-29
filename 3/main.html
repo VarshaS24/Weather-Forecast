@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+    <title>Weather Forecast</title>
+    <link rel="icon" href="icon.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <section class="weather">
+
+        <video class="video" autoplay loop muted plays-inline>
+            <source src="C:\Users\Varsha S\OneDrive\Desktop\Inter project\3\6190836-hd_1920_1080_30fps.mp4" type="video/mp4">
+        </video>
+
+        <div class="heading">
+            <h1>Weather Forecasting</h1>
+            <hr>
+        </div>
+        <div class="box">
+            <div class="search">
+            <input type="text" class="name" placeholder="Search city" >
+            </div>
+            <div class="glass">
+                <button class="press" onclick="getweather()">Search</button>
+            </div>
+            
+            </div>
+            
+            <div class="cname", style="display:none;">
+                <h5 id="city-name">City</h5>
+                
+            </div>
+        
+        
+            <div class="cloud" , style="display:none;">
+                <img id="weather-icon" src="" alt="Weather-Icon">
+                <h2 id="temperature"></h2>
+            </div>
+            
+            
+
+            <div class="square" >
+                <div class="sec1" , style="display:none;">
+                <div class="humidity">
+                    <h4>Humidity</h4>
+                    <i class="fa-solid fa-droplet"></i>
+                    <h5 id="humidity">0</h5>
+                </div>
+                </div>
+                <div class="sec2" , style="display:none;">
+                    <div class="pressure">
+                    <h4>Pressure</h4>
+                    <i class="fa-solid fa-temperature-three-quarters"></i>
+                    <h5 id="pressure-value">0</h5>
+                    </div>
+                </div>
+                
+                <div class="sec3" , style="display:none;">
+                    <div class="windy">
+                        <h4>Windy</h4>
+                        <i class="fa-solid fa-wind"></i>
+                        <h5 id="windy-value">0</h5>
+                    </div>
+                </div>
+                
+            </div>
+            
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
